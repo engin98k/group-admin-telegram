@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: telegram-bot
+    env: python
+    buildCommand: ""
+    startCommand: python bot.py
+    envVars:
+      - key: BOT_TOKEN
+        value: <توکن رباتت>
+      - key: WEBHOOK_URL
+        value: https://your-render-url.onrender.com
